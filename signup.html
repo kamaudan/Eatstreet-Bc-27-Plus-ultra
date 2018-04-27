@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <style type="text/css">
+            header{
+                background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(bknd.jpg);
+                min-height: 100vh;
+                background-size: cover; 
+                background-position: center;
+                }
+                .row{
+                    max-width: 1200px;
+                    margin: auto;
+                    }
+   
+                .log_in{
+                    width: 360px;
+                    padding: 10% 0 0;
+                    margin: auto;
+    
+                       }
+
+                .form{
+                    position: relative;
+                    z-index: 1;
+                    background: rgba(97, 95, 97, 0.459);
+                    max-width: 360px;
+                    margin: 0 auto 100px;
+                    padding: 45px;
+                    text-align: center;
+                    border-radius: 5px;
+                    }
+
+
+                .form input{
+                        font-family: "Rooboto", sans-serif;
+                        outline: none;
+                        background: #f2f2f2;
+                        width: 100%;
+                        border: 0;
+                        margin: 0 0 15px;
+                        padding: 15px;  
+                        box-sizing: border-box;
+                        font-size: 14px;
+                        border-radius: 10px;
+                    }
+
+                .form button{
+                            font-family: "Roboto", sans-serif;
+                            text-transform: uppercase;
+                            outline: 0;
+                            background: rgb(10, 10, 10);
+                            width: 100%;
+                            border: 0;
+                            padding: 15px;  
+                            color: #FFFFFF;
+                            font-size: 14px;
+                            cursor: pointer;
+                            border-radius: 10px;
+                            }
+
+
+                .form button:hover, .form button:active{
+                    background-color: darkslategrey;
+                }
+
+
+        </style>
+    </head>
+        <body>
+            <header>
+                
+                    <div class="row">
+                        <div class = "log_in">
+                            <div class = "form">
+                                <form class="register">
+                                <input type="text" placeholder="Username"/>
+                                <input type="email" placeholder="email"/>
+                                <input type="password" placeholder="password"/>
+                                <button>Register</button>
+                                <p class = "message">Already Registered? <a href="#" onclick="redirector()">Login Here</a> </p>
+                                
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </header>
+            <script>
+                    function redirector(){
+                        window.location="login.html"
+                    }
+            </script>
+        </body>
+    </head>
+</html>
